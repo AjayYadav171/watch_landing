@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartWatch Landing Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      width: 100%;
+      padding: 20px 50px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 24px;
+      color: #222;
+    }
+
+    header nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 0 20px;
+    }
+
+    .hero h2 {
+      font-size: 60px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
+      max-width: 600px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+    }
+
+    .hero a {
+      background: #ff6b6b;
+      color: #fff;
+      padding: 15px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .hero a:hover {
+      background: #ff4a4a;
+    }
+
+    /* Features Section */
+    .features {
+      padding: 80px 50px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      background: #f9f9f9;
+    }
+
+    .feature {
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .feature:hover {
+      transform: translateY(-10px);
+    }
+
+    .feature img {
+      width: 80px;
+      margin-bottom: 20px;
+    }
+
+    .feature h3 {
+      margin-bottom: 10px;
+      font-size: 22px;
+      color: #222;
+    }
+
+    /* Product Showcase */
+    .showcase {
+      padding: 80px 50px;
+      text-align: center;
+    }
+
+    .showcase h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .showcase p {
+      max-width: 600px;
+      margin: 0 auto 40px;
+      color: #555;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .product {
+      background: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .product h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .product p {
+      font-size: 16px;
+      margin-bottom: 10px;
+      color: #666;
+    }
+
+    .product span {
+      font-size: 18px;
+      font-weight: bold;
+      color: #ff6b6b;
+    }
+
+    /* Footer */
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SmartWatch Pro</h1>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#showcase">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Experience the Future on Your Wrist</h2>
+    <p>Stay connected, track your fitness, and elevate your lifestyle with the all-new SmartWatch Pro.</p>
+    <a href="#showcase">Shop Now</a>
+  </section>
+
+  <section id="features" class="features">
+    <div class="feature">
+      <img src="https://img.icons8.com/ios-filled/100/000000/heart-with-pulse.png" alt="Heart Rate">
+      <h3>Health Tracking</h3>
+      <p>Monitor your heart rate, sleep, and steps 24/7 with precision sensors.</p>
+    </div>
+    <div class="feature">
+      <img src="https://img.icons8.com/ios-filled/100/000000/smartphone.png" alt="Notifications">
+      <h3>Smart Notifications</h3>
+      <p>Receive calls, messages, and app alerts right on your wrist.</p>
+    </div>
+    <div class="feature">
+      <img src="https://img.icons8.com/ios-filled/100/000000/battery.png" alt="Battery">
+      <h3>Long Battery Life</h3>
+      <p>Enjoy up to 10 days of battery life with fast charging support.</p>
+    </div>
+  </section>
+
+  <section id="showcase" class="showcase">
+    <h2>Our Smart Watches</h2>
+    <p>Choose from a range of stylish smartwatches designed for every lifestyle.</p>
+    <div class="products">
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30" alt="Smartwatch Black">
+        <h3>SmartWatch Black</h3>
+        <p>Classic design with advanced features.</p>
+        <span>$199</span>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1523473827532-5a4b36a1c8c8" alt="Smartwatch Silver">
+        <h3>SmartWatch Silver</h3>
+        <p>Elegant look with modern technology.</p>
+        <span>$229</span>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7" alt="Smartwatch Sport">
+        <h3>SmartWatch Sport</h3>
+        <p>Built for performance and endurance.</p>
+        <span>$249</span>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>&copy; 2025 SmartWatch Pro. All Rights Reserved.</p>
+    <p>Contact: support@smartwatchpro.com</p>
+  </footer>
+</body>
+</html>
